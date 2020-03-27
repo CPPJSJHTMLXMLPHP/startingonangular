@@ -1,0 +1,44 @@
+label {
+    display: block;
+    
+    input, textarea {
+        display: block;
+        width: 20%;
+        margin-bottom: 50px;
+        padding: 1em;
+        margin-left: 80px;
+    }
+
+    .error {
+        margin-top: -20px;
+        background: rgba(230, 133, 6, 0.959);
+        padding: .5em;
+        display: inline-block;
+        font-size: .9em;
+        margin-bottom: 20px; 
+    }
+}
+
+.cta {
+    background: rgb(45, 45, 134);
+    border: none;
+    color: white;
+
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+
+.results {
+    margin-top: 50px;
+
+    strong {
+        display: block;
+    }
+    span {
+        margin-bottom: 40px;
+        display: block;
+    }
+}

@@ -1,0 +1,23 @@
+<header>
+    <div class="container">
+      <a routerLink="/" class="logo">{{appTitle}}</a>
+      <nav>
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact">Contact us</a></li>
+          <li><a routerLink="register">Register</a></li>
+          <li><a routerLink="login">Login</a></li>
+          <li><a routerLink= "sales">Sales</a></li>
+          <li><a routerLink="profile">Profile</a></li>
+          <li><a routerLink= "usrpro">UsrPro</a></li>
+
+          <header>
+            <button (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</button>
+            <button (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</button>
+          </header>
+
+        </ul>
+      </nav>
+    </div>
+  </header>

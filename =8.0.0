@@ -1,0 +1,4 @@
++ @angular-devkit/core@8.3.20
+updated 1 package and audited 19236 packages in 13.68s
+found 2 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details

@@ -11,6 +11,9 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/architect": "^0.800.6",
+    "@angular-devkit/core": "^8.3.20",
+    "@angular-devkit/schematics": "^8.3.20",
     "@angular/animations": "~8.2.9",
     "@angular/common": "~8.2.9",
     "@angular/compiler": "~8.2.9",
@@ -19,18 +22,26 @@
     "@angular/platform-browser": "~8.2.9",
     "@angular/platform-browser-dynamic": "~8.2.9",
     "@angular/router": "~8.2.9",
+    "@auth0/auth0-spa-js": "^1.6.3",
+    "angular-cli-ghpages": "^0.6.0",
+    "angular-jwt": "^0.1.11",
+    "angular-oauth2-oidc": "^8.0.4",
+    "angular-storage": "0.0.15",
+    "auth0-angular": "^4.2.7",
+    "eslint": "^5.16.0",
+    "express": "^4.17.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.9",
+    "@angular-devkit/build-angular": "^0.803.23",
     "@angular/cli": "~8.3.20",
     "@angular/compiler-cli": "~8.2.9",
     "@angular/language-service": "~8.2.9",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -43,5 +54,17 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPPJSJHTMLXMLPHP/webstart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CPPJSJHTMLXMLPHP/webstart/issues"
+  },
+  "homepage": "https://github.com/CPPJSJHTMLXMLPHP/webstart#readme"
 }

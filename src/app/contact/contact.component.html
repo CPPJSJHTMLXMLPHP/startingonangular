@@ -1,0 +1,51 @@
+<h1>Contact us</h1>
+
+<script>
+var adressave , namesave ;
+adressave = <textarea formControlName="adress"></textarea> ;
+namesave = <textarea  formControlName="message"></textarea> ;
+</script>
+
+<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+
+  <h5 *ngIf="success">Tu formulario es valido!</h5>
+
+  <label>
+    Name:
+    <textarea formControlName="name"></textarea>
+    <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+      <div *ngIf="messageForm.controls.name.errors.required">Se necesita tu nombre, bro.</div>
+    </div>
+  </label>
+
+  <label>
+    Message:
+    <textarea formControlName="message"></textarea>
+    <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+      <div *ngIf="messageForm.controls.message.errors.required"> es necesario que nos cuentes en que podemos ayudarte</div>
+    </div>
+  </label>
+
+  <label>
+    Adress:
+    <textarea formControlName="adress"></textarea>
+    <div *ngIf="submitted && messageForm.controls.adress.errors" class="error">
+      <div *ngIf="messageForm.controls.adress.errors.required"> El sistema necesita una direccion de mail.</div>
+    </div>
+  </label>
+
+  <input type="submit" value="Send message" class="cta">
+
+</form>
+
+
+<div *ngIf="submitted" class="results">
+  <strong>Name:</strong>
+  <span>{{ messageForm.controls.name.value }}</span>
+
+  <strong> Adress:</strong>
+  <span> {{messageForm.controls.adress.value}}</span>
+
+  <strong>Message:</strong> 
+  <span>{{ messageForm.controls.message.value }}</span>
+</div>
