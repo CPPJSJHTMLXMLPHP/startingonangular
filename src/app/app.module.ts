@@ -17,6 +17,7 @@ import {SalesComponent} from './sales/sales.component';
 import {UsrproComponent} from './usrpro/usrpro.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
